@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Dosis', sans-serif;
+    border-left: 3.5px solid rgb(40, 116, 166);
+    border-right: 3.5px solid rgb(155, 89, 182);
+}
+
+.all{
+    height: 100vh;
+    border-left: 2px solid rgb(40, 116, 166);
+    border-right: 2px solid rgb(155, 89, 182);
+    transition: 0.5s;
+}
+
+.dark-mode{
+    background-color: rgb(28, 40, 51);
+    color: rgb(255,255,255,0.9);
+    text-shadow: 2px 3px 3px rgb(255,255,255, 0.2);
+    box-shadow: 0px 0px 5px rgb(255,255,255,0.4);
+}
+
+
+.white-text{
+    color: rgb(255,255,255,0.9);
+    text-shadow: 2px 3px 3px rgb(255,255,255, 0.2);
+}
+
+
+.header{
+    /* border: 3px solid black; */
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 5px 5px rgb(0,0,0,0.2);
+    border-bottom: 3.5px solid rgb(40, 116, 166);
+    border-left: 3.5px solid rgb(40, 116, 166);
+    border-right: 3.5px solid rgb(155, 89, 182);
+    transition: 0.5s;
+    animation: down 1.5s;
+}
+
+.logo-img{
+    width: 55px;
+}
+
+.title-logo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600px;
+    color: rgb(0,0,0,0.9);
+    position: absolute;
+    top: 15px;
+    left: 65px;
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.1);
+}
+
+.hdu-name{
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0,0,0,0.9);
+}
+
+.icon-header{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.1);
+}
+
+.menu-icon,.search-icon{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 99px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.4);
+    margin-left: 5px;
+    transition: 0.3s;
+    animation: down 1s;
+}
+
+.search-icon:hover,.home-icon:hover ,.menu-icon:hover
+,.search-icon-card:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(40, 116, 166,0.9);
+}
+
+.menu-icon{
+    margin-right: 5px;
+}
+
+/* search page */
+
+.search-space{
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.search-card{
+    position: relative;
+    background-color: rgb(255,255,255,0.9);
+    width: 70%;
+    height: 500px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.5);
+    font-family: 'Dosis', sans-serif;
+    animation: top 1s;
+}
+
+.search-box{
+    position: absolute;
+    width: 300px;
+    font-family: 'Dosis', sans-serif;
+    outline: none;
+    border-radius: 50px;
+    height: 40px;
+    top: 10px;
+    border: 3px solid rgb(40, 116, 166,0.9);
+    font-size: 18px;
+    padding: 0px 15px 0px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.3);
+}
+
+.search-icon-card{
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    background-color: rgb(255,255,255,0.9);
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 99px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.3);
+    margin-left: 5px;
+    font-size: 30px;
+    transition: 0.3s;
+    border: 3px solid rgb(40, 116, 166,0.9);
+}
+
+.search-close{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: rgb(0,0,0,0.7);
+    text-shadow: 0px 5px 5px rgb(0,0,0,0.5);
+    transition: 0.3s;
+    font-size: 35px;
+}
+
+.search-close:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(231, 76, 60);
+}
+
+.search-note{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    font-size: 17px;
+    color: rgb(0,0,0,0.9);
+    text-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+}
+
+.search-content{
+    position: absolute;
+    padding: 5px;
+    width: 98%;
+    border: 3px solid rgb(40, 116, 166,0.9);
+    border-radius: 5px;
+    height: 80%;
+    top: 80px;
+    z-index: 1;
+}
+
+.hide{
+    display: none;
+}
+
+/* 
+Trang bắt đầu (info) */
+.start-page{
+    position: fixed;
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-card{
+    background: rgb(255,255,255,0.9);
+    padding: 10px;
+    width: 60%;
+    height: 380px;
+    border-radius: 5px;
+    position: relative;
+    animation: top 1s;
+    box-shadow: 3px 5px 5px rgb(0,0,0,0.6);
+    text-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+}
+
+.st-close{
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-shadow: 0px 5px 5px rgb(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.st-close:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(231, 76, 60);
+}
+
+.hide1{
+    display: none;
+}
+
+.st-logo{
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.st-big-title{
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    color: rgb(40, 116, 166,0.9);
+}
+
+.st-small-title{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 130px;
+}
+
+.st-content{
+    border: 3px solid rgb(40, 116, 166,0.7);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.st-list-note{
+    color: rgb(0,0,0);
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+.st-bt{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background: rgb(40, 116, 166,0.8);
+    box-shadow: 2px 3px 3px rgb(0,0,0,0.2);
+    border-radius: 5px;
+    color: rgb(255,255,255,0.9);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.st-bt:hover{
+    transform: scale(1.1,1.1);
+}
+
+.social-space{
+    position: fixed;
+    right: 0px;
+    top: 35%;
+    background:linear-gradient(to right,rgb(40, 116, 166,0.9),rgb(155, 89, 182,0.9));
+    width: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 150px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.7);
+}
+
+.social-space ul li a i{
+    font-size: 30px;
+    color: rgb(255,255,255,0.8);
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.social-space ul li a i:hover{
+    color: rgb(255,255,255);
+    font-size: 33px;
+}
+
+
+/* menu page */
+.menu-space{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.menu-close{
+    position: absolute;
+    font-size: 35px;
+    top: 10px;
+    right: 10px;
+    color: rgb(0,0,0,0.9);
+    z-index: 2;
+    transition: 0.3s;
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.2);
+}
+
+.menu-close:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(231, 76, 60);
+}
+ul{
+    list-style: none;
+}
+
+.menu-card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 0px 2px 2px rgb(0,0,0);
+    text-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+    background-color: rgb(255,255,255);
+    animation: right 1.5s;
+    transition: 0.3s;
+}
+
+.menu-title{
+    margin-top: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(40, 116, 166,0.9);
+    text-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.menu-ul{
+    margin-top: 15px;
+    width: 100%;
+    height: 210px;
+    font-weight: 500;
+}
+
+.menu-li{
+    font-size: 18px;
+    height: 35px;
+    color: rgb(40, 116, 166,0.9);
+    transition: 0.3s;
+}
+
+.menu-li a{
+    transition: 0.3s;
+    color: rgb(0,0,0);
+}
+
+.menu-li a:hover{
+    color: rgb(40, 116, 166,0.9);
+    font-size: 20px;
+}
+
+.menu-buttons{
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.menu-login{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    width: 180px;
+    margin-right: 5px;
+    border: none;
+    height: 30px;
+    border-radius: 30px;
+    color: rgb(255,255,255,0.9);
+    background: rgb(40, 116, 166,0.9);
+    box-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.menu-register{
+    box-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    width: 180px;
+    margin-right: 5px;
+    border: 3px solid rgb(40, 116, 166,0.9);
+    height: 30px;
+    border-radius: 30px;
+    background: rgb(255,255,255,0.9);
+    color: rgb(40, 116, 166,0.9);
+    transition: 0.3s;
+}
+
+.menu-register:hover, .menu-login:hover{
+    transform: scale(1.1,1.1);
+}
+
+.menu-more-ul li{
+    margin-bottom: 5px;
+    color: rgb(0,0,0);
+}
+
+.menu-more-ul li i{
+    font-size: 25px;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.menu-more-ul li i:hover{
+    color: rgb(40, 116, 166,0.9);
+    transform: scale(1.2,1.2);
+}
+
+/* LOGIN CARD */
+.login-space,.register-space{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hide2{
+    display: none;
+}
+
+.login-card,.rs-card{
+    position: relative;
+    width: 500px;
+    height: 340px;
+    background-color: rgb(255,255,255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.5);
+    text-align: center;
+    animation: top 1s;
+}
+
+.login-close,.rs-close{
+    position: absolute;
+    font-size: 35px;
+    top: 5px;
+    right: 5px;
+    color: rgb(0,0,0,0.9);
+    z-index: 2;
+    transition: 0.3s;
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.2);
+}
+
+.login-close:hover,.rs-close:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(231, 76, 60);
+}
+
+.login-title,.rs-title{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 600;
+    color: rgb(40, 116, 166,0.9);
+    text-shadow: 2px 5px 5px rgb(0,0,0,0.2);
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-control,.rs-control{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-control input ,.rs-control input{
+    width: 90%;
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.3);
+    border-bottom: 2px solid rgb(0,0,0,0.3);
+}
+
+
+
+.form-control span,.rs-control span{
+    width: 0%;
+    position: absolute;
+    left: 22px;
+    top: 37px;
+    border-bottom: 3px solid rgb(40, 116, 166,0.8);
+    transition: 1s;
+}
+
+#gmail:focus ~ span ,#password:focus ~ span,#rs-gmail:focus ~ span 
+,#rs-password:focus ~ span{
+    width: 91%;
+}
+
+.error{
+    position: absolute;
+    left: 22px;
+    top: 40px;
+    font-size: 15px;
+    color: rgb(231, 76, 60);
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.3);
+}
+
+u{
+    color: rgb(40, 116, 166);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+u:hover{
+    font-size: 20px;
+}
+
+.suggestion{
+    margin-top: 30px;
+}
+
+.login-bt,.rs-bt{
+    margin-top: 30px;
+    width: 90%;
+    height: 35px;
+    background: rgb(40, 116, 166,0.8);
+    color: rgb(255,255,255,0.9);
+    font-size: 17px;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 2px 3px 3px rgb(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.login-bt:hover,.rs-bt:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* register */
+
+
+
+
+
+/* font-family: 'Bungee', cursive; */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+
+
+/* Chân trang */
+.last{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    border-top: 3px solid rgb(255,255,255,0.9);
+    padding: 5px;
+    background:linear-gradient(to right,rgb(40, 116, 166),rgb(155, 89, 182));
+    box-shadow: 0px 0px 7px rgb(0,0,0,0.8);
+    animation: top 1.5s;
+}
+
+.last-logo{
+    width: 65px;
+    margin-top: 5px;
+}
+
+.title-last{
+    position: absolute;
+    left: 75px;
+    bottom: 55px;
+}
+
+.last-name ,.last-us-name{
+    margin-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255,255,255,0.9);
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.2);
+}
+
+.hdu-info{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    border-left: 3px solid rgb(255,255,255,0.6);
+    padding: 5px;
+    color: rgb(255,255,255,0.9);
+    font-size: 18px;
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.2);
+}
+
+.hdu-social-network{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    /* border-bottom: 3px solid rgb(255,255,255,0.6); */
+    padding: 5px;
+}
+
+.hdu-social-network a i{
+    color: rgb(255,255,255,0.8);
+    text-shadow: 2px 3px 3px rgb(0,0,0,0.2);
+    margin-right: 35px;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.facebook-last-icon:hover , .tiktok-last-icon:hover ,.youtube-last-icon:hover,.map-last-icon:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(255,255,255);
+}
+
+
+
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+
+@keyframes top{
+    0%{
+        opacity: 0;
+        transform: translate(0,+100px);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translate(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0%);
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Register-HDU.css">
+    <title>HDU: Nhập Học online</title>
+</head>
+<body>
+    <div class="all">
+
+        <!-- star-page -->
+        <div class="start-page hide1">
+            <div class="start-card">
+                <p class="st-title">
+                    <i class='bx bx-x st-close' ></i>
+                    <img class="st-logo" src="img/HDU-LG-NON-BG.png">
+                    <p class="st-big-title">
+                        WELCOME
+                    </p>
+                    <p class="st-small-title">
+                        CHÀO MỪNG ĐẾN NHẬP HỌC ONLINE ĐH HỒNG ĐỨC
+                    </p>
+                    <div class="st-content">
+                        <p class="st-list-note">
+                            1. Tra cứu thông tin trúng tuyển theo mã hồ sơ, số điện thoại, thẻ căn cước, tên... <br>
+                            2. Thông tin trúng tuyển<br>
+                            3. Cập nhật thông tin cá nhân<br>
+                            4. Upload hồ sơ minh chứng <br>
+                            5. Thông tin học phí, thanh toán<br>
+                           </p>
+                    </div>
+                    <button class="st-bt">Bắt đầu</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- menu page -->
+        <div class="menu-space hide1">
+            <i class='bx bx-x menu-close' ></i>
+            <div class="menu-card ">
+                <p class="menu-title">MORE</p>
+                <ul class="menu-ul">
+                    <li class="menu-li">
+                        <a href="http://www.hdu.edu.vn/">
+                            Trang chủ ĐH Hồng Đức
+                        </a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="http://www.hdu.edu.vn/hanh-chinh-to-chuc-su-kien.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="">
+                            Thông tin của bạn
+                        </a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="">
+                            Cập nhật thông tin
+                        </a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="">
+                            Tình trạng xét duyệt
+                        </a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="">
+                            Thông tin trang web
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="menu-buttons">
+                    <button class="menu-login">Đăng nhập</button>
+                    <button class="menu-register">Đăng ký</button>
+                </div>
+
+                <div class="menu-more-icon">
+                    <ul class="menu-more-ul">
+                        <li>
+                            <i class='bx bx-sun sun-icon hide' ></i>
+                            <i class='bx bx-moon moon-icon' ></i>
+                            Chế độ nền tối
+                        </li>
+                        <li>
+                            <i class='bx bx-loader-circle feedback-icon'></i>
+                            Đóng góp
+                        </li>
+                        <li>
+                            <i class='bx bx-help-circle help-icon'></i>
+                            Trợ giúp
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="social-space">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/DHHongDuc">
+                        <i class='bx bxl-facebook-circle facebook-icon'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@hongducuniversity">
+                        <i class='bx bxl-tiktok tiktok-icon' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC8q2O8hI1co5bmOFfFj7i-Q">
+                        <i class='bx bxl-youtube youtube-icon' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.hdu.edu.vn/so-do-truong-dai-hoc-hong-duc.html">
+                        <i class='bx bx-map-alt map-icon' ></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- login -->
+        <div class="login-space hide2">
+            <div class="login-card">
+                <i class='bx bx-x login-close' ></i>
+                <p class="login-title">ĐĂNG NHẬP</p>
+
+                <form action="">
+                    <div class="form-control">
+                        <input id="gmail" class="gmail" type="email" placeholder="Your mail">
+                        <small class="error"></small>
+                        <span></span>
+                    </div>
+                    <div class="form-control">
+                        <input id="password" class="gmail" type="password" placeholder="password">
+                        <small class="error"></small>
+                        <span></span>
+                    </div>
+                    <p class="suggestion">Nếu chưa có tài khoản hãy <u>Đăng Ký</u></p>
+                    <button  class="login-bt">Đăng nhập</button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- register -->
+        <div class="register-space hide2">
+            <div class="rs-card">
+                <i class='bx bx-x rs-close' ></i>
+                <p class="rs-title">Đăng Ký</p>
+
+                <form class="rs-form" action="">
+                    <div class="rs-control">
+                        <input id="rs-gmail" class="gmail" type="email" placeholder="Your mail">
+                        <small class="error"></small>
+                        <span></span>
+                    </div>
+                    <div class="rs-control">
+                        <input id="rs-password" class="gmail" type="password" placeholder="password">
+                        <small class="error"></small>
+                        <span></span>
+                    </div>
+                    <p class="rs-suggestion">Đã có tài khoản hãy <u>Đăng nhập</u></p>
+                    <button  class="rs-bt">Đăng ký</button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- search page -->
+        <div class="search-space hide1">
+            <div class="search-card">
+                <input class="search-box" type="text">
+                <i class='bx bx-search search-icon-card'></i>
+                <i class='bx bx-x search-close' ></i>
+                <p class="search-note">Tìm kiếm theo mã hồ sơ, số điện thoại, căn cước...</p>
+                <div class="search-content">
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- header taskbar -->
+        <div class="header">
+            <!-- Logo group -->
+            <img class="logo-img" src="img/HDU-LG-NON-BG.png">
+            <div class="title-logo">
+                <p class="hdu-name">ĐẠI HỌC HỒNG ĐỨC</p>
+                <p class="hdu-us-name">HONG DUC UNIVERSITY</p>
+            </div>
+        <!-- icons -->
+            <div class="icon-header">
+                <!-- <i class='bx bx-sun sun-icon hide' ></i>
+                <i class='bx bx-moon moon-icon' ></i> -->
+                <!-- <a href="http://www.hdu.edu.vn/">
+                    <i class='bx bx-home-alt home-icon' ></i>
+                </a> -->
+                <i class='bx bx-search search-icon'></i>
+                <i class='bx bx-list-ul menu-icon'></i>
+            </div>
+        </div>
+
+        
+
+        <!-- contents -->
+        <div class="content">
+
+        </div>
+
+
+        <!-- end page -->
+        <div class="last">
+            <img class="last-logo" src="img/HDU-LG-NON-BG.png">
+            <div class="title-last">
+                <p class="last-name">TRƯỜNG ĐẠI HỌC HỒNG ĐỨC</p>
+                <p class="last-us-name">HONG DUC UNIVERSITY</p>
+            </div>
+
+            <div class="hdu-social-network hide">
+                <a href="https://www.facebook.com/DHHongDuc">
+                    <i class='bx bxl-facebook-circle facebook-last-icon'></i>
+                </a>
+                <a href="https://www.tiktok.com/@hongducuniversity">
+                    <i class='bx bxl-tiktok tiktok-last-icon' ></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC8q2O8hI1co5bmOFfFj7i-Q">
+                    <i class='bx bxl-youtube youtube-last-icon' ></i>
+                </a>
+                <a href="http://www.hdu.edu.vn/so-do-truong-dai-hoc-hong-duc.html">
+                    <i class='bx bx-map-alt map-last-icon' ></i>
+                </a>
+            </div>
+
+            <div class="hdu-info">
+                <p class="hdu-address">Địa chỉ: Số 565 Quang Trung - Phường Đông Vệ - TP.Thanh Hóa</p>
+                <p class="hdu-number">Điện thoại: (0237).3910.222, Fax: (0237).3910.475</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script SRC="hdu-rs.js"></script>
+</body>
+</html>
